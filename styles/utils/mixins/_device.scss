@@ -1,5 +1,5 @@
 /* breakpoints are set here */
-@mixin respond($breakpoint) {
+@mixin responsive($breakpoint) {
   @if $breakpoint==mobile {
     @media screen and (max-width: 485px) {
       @content;
