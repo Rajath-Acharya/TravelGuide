@@ -5,7 +5,7 @@ import styles from "../styles/pages/index.module.scss";
 
 const Home = () => {
   return (
-    <main className={styles.container}>
+    <main className={styles.homePageContainer}>
       <div>
         <section>
           <div className={styles.logoWrapper}>

@@ -1,0 +1,17 @@
+@import "../utils/_common.scss";
+
+.signupContainer {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background: $secondary-color;
+  @include flex-center;
+  & > div {
+    max-width: 420px;
+    width: 100%;
+    height: 510px;
+    border-radius: 8px;
+    background-color: $light-color;
+    @include flex-center;
+  }
+}
