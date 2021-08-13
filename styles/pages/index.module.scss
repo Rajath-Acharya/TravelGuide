@@ -1,6 +1,6 @@
 @import "../utils/_common.scss";
 
-.container {
+.homePageContainer {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
@@ -68,7 +68,7 @@
         width: 100%;
         height: 50px;
         @include flex-center;
-        box-shadow: 0 13px 27px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: $cta-box-shadow;
         border-radius: $primary-border-radius;
         font-size: 15px;
         font-weight: 400;
@@ -79,7 +79,7 @@
       }
       a:last-child {
         background-color: transparent;
-        border: solid 2px rgba(238, 238, 238, 0.5);
+        border: solid 2px $cta-border-color;
         color: $light-color;
         margin-top: 16px;
         margin-bottom: unset;
