@@ -8,6 +8,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
+        <meta name="description" content="welcome page" />
         <title>Welcome</title>
       </Helmet>
       <main className={styles.homePageContainer}>
