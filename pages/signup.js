@@ -8,6 +8,7 @@ const Signup = () => {
   return (
     <>
       <Helmet>
+        <meta name="description" content="sign up page" />
         <title>Sign up</title>
       </Helmet>
       <main className={styles.signupContainer}>

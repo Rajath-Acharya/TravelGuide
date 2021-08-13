@@ -5,6 +5,7 @@ const Login = () => {
   return (
     <>
       <Helmet>
+        <meta name="description" content="login page" />
         <title>Login</title>
       </Helmet>
       <div>Login Page</div>
