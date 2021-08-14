@@ -71,7 +71,7 @@ const Signup = () => {
         </div>
         <section>
           <p>
-            Already a member? <Link href="/">Sign in</Link>
+            Already a member? <Link href="/login">Sign in</Link>
           </p>
         </section>
       </main>
