@@ -1,0 +1,109 @@
+@import "../utils/common";
+
+@mixin container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background: $secondary-color;
+  @include flex-column-center;
+}
+
+@mixin form-common-styles {
+  max-width: 420px;
+  width: 100%;
+  height: 510px;
+  border-radius: 8px;
+  background-color: $light-color;
+  @include flex-column-center;
+  margin-bottom: 36px;
+}
+
+@mixin common-heading {
+  font-size: 28px;
+  color: $base-color-dark;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+@mixin common-cta {
+  width: 100%;
+  height: 50px;
+  @include flex-center;
+  box-shadow: $cta-box-shadow;
+  border-radius: $primary-border-radius;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background: $secondary-color;
+  color: $light-color;
+}
+
+@mixin common-input {
+  input {
+    border: none;
+    border-bottom: 1px solid $input-border-color;
+  }
+  input:focus.inputFocus {
+    border-bottom: 2px solid $primary-color;
+    box-shadow: unset;
+  }
+  ::placeholder {
+    color: $base-color-light;
+    letter-spacing: 1px;
+    font-size: 13px;
+  }
+}
+
+@mixin common-bottom-content {
+  p {
+    font-size: 13px;
+    color: $cta-border-color;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    border-top: 2px solid $line-color;
+    text-align: center;
+    a {
+      font-size: 14px;
+      color: $light-color;
+      padding-bottom: 2px;
+      border-bottom: 2px solid $cta-border-color;
+    }
+  }
+}
+
+@mixin antd-global {
+  :global {
+    .ant-form {
+      max-width: 340px;
+      width: 100%;
+    }
+    .ant-col-16 {
+      max-width: unset;
+    }
+    .ant-col-offset-8 {
+      margin-left: unset;
+    }
+    .ant-input-affix-wrapper {
+      border: none;
+      border-bottom: 1px solid $input-border-color;
+    }
+    .ant-input-affix-wrapper-focused {
+      border-bottom: 2px solid $primary-color;
+      box-shadow: unset;
+    }
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
+    .ant-checkbox-wrapper {
+      span:last-child {
+        font-size: 13px;
+        font-weight: 400;
+        color: $base-color-medium;
+        a {
+          text-decoration: underline;
+          color: #1890ff;
+        }
+      }
+    }
+  }
+}

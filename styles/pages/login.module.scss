@@ -1,0 +1,33 @@
+@import "../utils/_common.scss";
+@import "../recurrent/form.scss";
+
+.loginContainer {
+  @include container;
+  & > div {
+    @include form-common-styles;
+    height: 390px;
+    h1 {
+      @include common-heading;
+    }
+    @include common-input;
+    .signupCta {
+      margin-top: 30px;
+      button {
+        @include common-cta;
+      }
+    }
+    .checkBoxWrapper {
+      @include flex-between;
+      p {
+        font-size: 13px;
+        color: $base-color-dark;
+      }
+    }
+  }
+  & > section {
+    max-width: 380px;
+    width: 100%;
+    @include common-bottom-content;
+  }
+  @include antd-global;
+}
