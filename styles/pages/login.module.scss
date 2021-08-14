@@ -5,22 +5,15 @@
   @include container;
   & > div {
     @include form-common-styles;
-    height: 390px;
+    height: 350px;
     h1 {
       @include common-heading;
     }
     @include common-input;
     .signupCta {
-      margin-top: 30px;
+      margin-top: 40px;
       button {
         @include common-cta;
-      }
-    }
-    .checkBoxWrapper {
-      @include flex-between;
-      p {
-        font-size: 13px;
-        color: $base-color-dark;
       }
     }
   }
