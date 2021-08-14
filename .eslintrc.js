@@ -3,18 +3,24 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["react-app", "prettier"],
-  plugins: ["react", "prettier", "flowtype"],
+  parser: 'babel-eslint',
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'airbnb'],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  plugins: ['react'],
   rules: {
-    "prettier/prettier": [
-      "error",
-      {
-        printWidth: 80,
-        trailingComma: "es5",
-        jsxSingleQuote: true,
-        singleQuote: true,
-        useTabs: true,
-      },
-    ],
+    'no-param-reassign': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-props-no-spreading': 'off',
   },
 };
