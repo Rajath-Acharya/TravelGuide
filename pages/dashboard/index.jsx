@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from '../../components/Navbar';
+import Header from '../../shared/Header';
 
 const Dashboard = () => (
-  <Navbar />
+  <Header />
 );
 
 export default Dashboard;
