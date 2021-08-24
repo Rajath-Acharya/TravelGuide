@@ -1,0 +1,21 @@
+@import "../utils/common";
+
+.header {
+    max-width: 1220px;
+    width: 100%;
+    height: 104px;
+    margin: 0 auto;
+    background-color: $light-color;
+    border-bottom: 2px solid $border-color;
+    @include flex-between;
+    padding: 0 30px;
+    section:first-child {
+        color: red;
+    }
+    section:nth-child(2) {
+        color: green;
+    }
+    section:last-child {
+        color: blue;
+    }
+}
